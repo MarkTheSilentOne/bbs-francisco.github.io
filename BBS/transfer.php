@@ -20,7 +20,7 @@ if(isset($_POST['submit']))
     if (($amount)<0)
    {
         echo '<script type="text/javascript">';
-        echo ' alert("Oops! Negative values cannot be transferred")';  
+        echo ' alert("Negative values is invalid, try again")';  
         echo '</script>';
     }
 
@@ -31,7 +31,7 @@ if(isset($_POST['submit']))
     {
         
         echo '<script type="text/javascript">';
-        echo ' alert("Bad Luck! Insufficient Balance")';  
+        echo ' alert("Insufficient Balance")';  
         echo '</script>';
     }
     
@@ -41,7 +41,7 @@ if(isset($_POST['submit']))
     else if($amount == 0){
 
          echo "<script type='text/javascript'>";
-         echo "alert('Oops! Zero value cannot be transferred')";
+         echo "alert('Zero value cannot be transferred')";
          echo "</script>";
      }
 
